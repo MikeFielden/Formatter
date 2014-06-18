@@ -1,0 +1,9 @@
+{
+	"name": "formatter",
+	"version": "0.0.1",
+	"private": false,
+	"dependencies": {
+		"lodash": "^2.4.1",
+		"humanize": "0.0.9"
+	}
+}
