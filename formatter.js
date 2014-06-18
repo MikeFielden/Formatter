@@ -13,7 +13,7 @@ module.exports = {
 	 *	Takes a number and optional values and formats it
 	 **/
 	number: function (val, options) {
-		options = options || {};
+		if (options === undefined) options = {};
 
 		var o = _.defaults(options, defaultNumberFormat);
 
