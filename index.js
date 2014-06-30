@@ -13,9 +13,13 @@ module.exports = {
 	 *	Takes a number and optional values and formats it
 	 **/
 	number: function (val, options) {
-		if (options === undefined) options = {};
+		var o;
 
-		var o = _.defaults(options, defaultNumberFormat);
+		if (options === undefined) {
+			options = {};
+		}
+
+		o = _.defaults(options, defaultNumberFormat);
 
 		return humanize.numberFormat(val, o.decimals, o.decPoint, o.thousandsSep);
 	}
